@@ -15,14 +15,14 @@ namespace HeidiMakkonen.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult Työelämä()
         {
             ViewData["Message"] = "Your application description page.";
 
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult Yhteystiedot()
         {
             ViewData["Message"] = "Your contact page.";
 
@@ -33,6 +33,17 @@ namespace HeidiMakkonen.Controllers
         {
             return View();
         }
+
+        public IActionResult Blogi()
+        {
+            return View();
+        }
+
+        public IActionResult Siviiliminä ()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
