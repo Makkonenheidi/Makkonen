@@ -5,10 +5,16 @@
 
 <h2>Blogi</h2>
 
+@{
+    string[] tiedostoNimet = System.IO.Directory.GetFiles("Blogi", "*.html");
 
+    foreach (string nimi in tiedostoNimet)
+    {
+        string sisältö = System.IO.File.ReadAllText(nimi);
 
-
-
-<h3>@ViewData["Message"]</h3>
-
-<p>Use this area to provide additional information.</p>
+        <p>&nbsp;</p>
+        <hr />
+        <p>&nbsp;</p>
+        <div>@Html.Raw(sisältö)</div>
+    }
+}
