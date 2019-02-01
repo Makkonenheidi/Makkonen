@@ -39,7 +39,32 @@ namespace HeidiMakkonen.Controllers
             return View();
         }
 
-        public IActionResult Siviiliminä ()
+        public IActionResult Siviiliminä()
+        {
+            return View();
+        }
+
+        public IActionResult Työura()
+        {
+            return View();
+        }
+
+        public IActionResult Koulutus()
+        {
+            return View();
+        }
+
+        public IActionResult Tulevaisuus()
+        {
+            return View();
+        }
+       
+        public IActionResult Harrastukset()
+        {
+            return View();
+        }
+
+        public IActionResult Taloprojekti()
         {
             return View();
         }
