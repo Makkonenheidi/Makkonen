@@ -39,7 +39,7 @@ namespace HeidiMakkonen.Controllers
             return View();
         }
 
-        public IActionResult Siviiliminä()
+        public IActionResult Vapaalla()
         {
             return View();
         }
