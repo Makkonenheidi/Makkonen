@@ -1081,13 +1081,13 @@ th {
           box-sizing: border-box;
 }
 html {
-  font-size: 10px;
+  font-size: 15px;
 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
@@ -3534,7 +3534,7 @@ tbody.collapse.in {
   font-size: 14px;
   text-align: left;
   list-style: none;
-  background-color: #c5ebbd;
+  background-color: #c9dec0;                        /*tämä muuttaa dropdownvalikon värin*/
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid #ccc;
@@ -3559,15 +3559,15 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
-  color: #333;
+  color: #333;                          /*tämä muutti tekstin jotakin?*/
   white-space: nowrap;
 }
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-  color: #262626;
-  text-decoration: none;
-  background-color: #f5f5f5;
-}
+    .dropdown-menu > li > a:hover,
+    .dropdown-menu > li > a:focus {
+        color: #262626;                 /*tämä muuttaa dropdownin tekstivärin*/
+        text-decoration: none;
+        background-color: #adcc9f;           /*tämä muutti osoitinvärin*/
+    }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
@@ -4497,28 +4497,28 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+    background-color: #c9dec0; /*muuttaa palkin värin*/
+    border-color: #387949; /*muuttaa palkin alareunavärin*/
 }
-.navbar-default .navbar-brand {
-  color: #777;
-}
+    .navbar-default .navbar-brand {
+        color: #387949;                     /*varjostaa tekstin HeidiMakkonen*/
+    }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
-  background-color: transparent;
+  color: #5e5e5e;                           /*värittää tekstin HeidiMakkonen*/
+  background-color: #adcc9f;            /*muuttaa taustavärin tekstille HeidiMakkonen*/
 }
 .navbar-default .navbar-text {
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #777;                                  /*varjostaa muut navbarin tekstit*/
 }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #333;
-  background-color: transparent;
-}
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        color: #333;                                 /*värittää muut tekstit*/
+        background-color: #adcc9f;                  /*muuttaa taustavärin muille*/
+    }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -4548,8 +4548,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #555;
-  background-color: #e7e7e7;
+  color: #555;                                          /*vaihtaa tekstivärin muille*/
+  background-color: #bbd5b0;                        /*vaihtaa taustavärin muille*/
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -4558,7 +4558,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #333;
-    background-color: transparent;
+    background-color: transparent;                                      /*vaihtaa pienemmässä ikkunassa dropdownin tekstien taustavärinS*/
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
