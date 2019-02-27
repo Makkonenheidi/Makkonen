@@ -4516,8 +4516,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
     .navbar-default .navbar-nav > li > a:hover,
     .navbar-default .navbar-nav > li > a:focus {
-        color: #333;                                 /*värittää muut tekstit*/
-        background-color: #adcc9f;                  /*muuttaa taustavärin muille*/
+        color: #387949; /*värittää muut tekstit*/
+        background-color: #adcc9f; /*muuttaa taustavärin muille*/
     }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
